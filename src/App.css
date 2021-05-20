@@ -1,11 +1,16 @@
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
 .App {
-  /*text-align: center;
+  
   width: 100vw;
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 12px;
-  align-items: center;*/
+  align-items: center;
 }
 
 .App-header {
@@ -18,7 +23,7 @@
   
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 10% 32% 40% 10%;
+  grid-template-rows: 80px repeat(3, auto);
   grid-template-areas: 'logo'
                        'hero'
                        'coming'

@@ -2,3 +2,8 @@
     grid-area: hero;
     width: 100%;
 }
+
+.hero-mobile img {
+    height: auto;
+    width: 100%;
+}
