@@ -1,0 +1,31 @@
+.form-div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.input-control {
+    background-color: hsl(0, 47%, 90%);
+    color: hsl(0, 40%, 76%);  
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    padding-left: 1.2rem;  
+    border-radius: 50px;
+    border: 1px solid hsl(0, 40%, 76%);
+    width: 75%;
+    height: 3rem;
+    outline: none;
+}
+
+.button-control {
+    font-family: 'Josefin Sans', sans-serif;
+    border-radius: 50px;
+    background-color: hsl(0, 55%, 76%);
+    color:hsl(0, 98%, 98%);
+    border: 1px solid hsl(0, 55%, 76%);
+    width: 4.5rem;
+    height: 3.7rem;
+    font-size: 1.5rem;
+    margin-left: -4rem;
+    box-shadow: 0px 5px 10px -4px rgba(222,135,135,0.72);
+}

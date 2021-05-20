@@ -1,22 +1,18 @@
-import logo from './logo.svg';
+import HeaderLogo from './components/HeaderLogo';
+import HeroMobile from './components/Hero'
+import ComingSoon from './components/ComingSoon';
+import EmailField from './components/EmailField';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+       
+          <HeaderLogo></HeaderLogo>
+          <HeroMobile></HeroMobile>
+          <ComingSoon></ComingSoon>
+          <EmailField></EmailField>
       </header>
     </div>
   );
