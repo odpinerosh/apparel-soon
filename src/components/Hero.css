@@ -1,3 +1,4 @@
 .hero-mobile {
+    grid-area: hero;
     width: 100%;
 }

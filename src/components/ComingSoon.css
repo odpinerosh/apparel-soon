@@ -1,13 +1,14 @@
 .coming-soon {
+    grid-area: coming;
     display: flex;
     justify-content: center;
-    text-align: center;
 }
 
     .coming-soon-txt {
         width: 89%;
         font-family: 'Josefin Sans', sans-serif;   
-        color: hsl(0, 40%, 76%);     
+        color: hsl(0, 40%, 76%);
+        text-align: center;     
     }
 
         .coming-soon-h1 {

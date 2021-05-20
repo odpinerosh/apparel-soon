@@ -4,8 +4,8 @@ import './Hero.css';
 
 function HeroMobile() {
   return (
-    <div>
-      <img src={HeroMob} className="hero-mobile" alt="Portrait" />
+    <div className="hero-mobile">
+      <img src={HeroMob} alt="Portrait" />
     </div>
   );
 }

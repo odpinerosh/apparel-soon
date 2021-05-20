@@ -1,7 +1,11 @@
 .App {
-  /*text-align: center;*/
-  width: 100%;
-  
+  /*text-align: center;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 12px;
+  align-items: center;*/
 }
 
 .App-header {
@@ -9,8 +13,26 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;*/
+  width: 100vw;
+  height: 100vh;
   
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 10% 32% 40% 10%;
+  grid-template-areas: 'logo'
+                       'hero'
+                       'coming'
+                       'form';
+  row-gap: 10px;
+  
+  /*grid-column-start: 2;
+  grid-column-end: 10;*/
   color: hsl(0, 93%, 68%);
 }
 
+@media screen and (min-width: 720px) {
+  .App-header {
+    
+  }
+}
 
