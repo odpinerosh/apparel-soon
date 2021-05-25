@@ -1,7 +1,9 @@
 #root {
   display: flex;
   justify-content: center;
-  
+  background: url('./images/bg-pattern-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .App {
@@ -15,8 +17,7 @@
                        'coming'
                        'form';
   align-items: center;
-  background: url('./images/bg-pattern-desktop.svg');
-  background-repeat: no-repeat;
+  
 }
 
 
