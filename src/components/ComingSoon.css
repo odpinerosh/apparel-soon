@@ -27,4 +27,9 @@
             font-size: 1rem;
             line-height: 1.8rem;
         }
-        
+
+@media screen and (min-width: 720px) {
+    .coming-soon-txt {
+        text-align: left;
+    }
+}

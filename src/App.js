@@ -7,13 +7,10 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-       
           <HeaderLogo></HeaderLogo>
           <HeroMobile></HeroMobile>
           <ComingSoon></ComingSoon>
           <EmailField></EmailField>
-      </header>
     </div>
   );
 }

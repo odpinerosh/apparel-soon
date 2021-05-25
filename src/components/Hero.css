@@ -1,9 +1,18 @@
 .hero-mobile {
     grid-area: hero;
     width: 100%;
+    /*background-image: url('../images/hero-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;*/
 }
 
 .hero-mobile img {
-    height: auto;
+    height: 100%;
     width: 100%;
 }
+
+@media screen and (min-width: 720px) {
+/*     .hero-mobile {
+      grid-area: unset;
+    } */
+  }

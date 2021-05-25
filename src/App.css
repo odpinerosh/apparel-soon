@@ -1,43 +1,40 @@
 #root {
-  width: 100vw;
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+  
 }
 
 .App {
-  
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  column-gap: 12px;
-  align-items: center;
-}
-
-.App-header {
-  /*display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;*/
-  width: 100vw;
-  height: 100vh;
-  
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 80px repeat(3, auto);
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr 1fr auto;
   grid-template-areas: 'logo'
                        'hero'
                        'coming'
                        'form';
-  row-gap: 10px;
-  
-  /*grid-column-start: 2;
-  grid-column-end: 10;*/
-  color: hsl(0, 93%, 68%);
+  align-items: center;
+  background: url('./images/bg-pattern-desktop.svg');
+  background-repeat: no-repeat;
 }
 
+
 @media screen and (min-width: 720px) {
-  .App-header {
-    
+ 
+  .App {
+    max-width: 1200px;
+    grid-template-rows: 2rem auto auto auto 2rem;
+    grid-template-columns: 1fr 2rem auto;
+    grid-template-areas: '. . .'
+                         'logo . hero'
+                         'coming . hero'
+                         'form . hero'
+                         '. . .';
+    row-gap: unset;
+    column-gap: 12px;
+    align-items: center;
+ 
   }
 }
 
