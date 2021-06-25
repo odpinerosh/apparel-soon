@@ -1,42 +1,99 @@
 .form-div {
     grid-area: form;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     width: 100%;
     margin-bottom: 5rem;
 }
 
-    .input-control {
-        color: hsl(0, 40%, 76%);  
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 1rem;
-        padding-left: 1.2rem;  
-        border-radius: 50px;
-        border: 1px solid hsl(0, 40%, 76%);
-        width: 75%;
+    .form-elements {
+        border: 1px solid rgba(206, 151, 151, 0.5);
+        border-right: none;
+        margin: 0 auto;
+        width: 80%;
+        border-radius: 3rem;
         height: 3rem;
-        outline: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    .input-control::placeholder {
-        color: hsl(0, 40%, 76%);  
-    }
+        .input-control {
+            color: hsl(0, 40%, 76%);  
+            font-family: 'Josefin Sans', sans-serif;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            border: none;
+            width: 85%;
+            height: 85%;
+            background-color: transparent;
+            margin-left: 1.5rem;
+            outline: none;
+        }
 
-    .button-control {
-        font-family: 'Josefin Sans', sans-serif;
-        border-radius: 50px;
-        background-color: hsl(0, 55%, 76%);
-        color:hsl(0, 98%, 98%);
-        border: 1px solid hsl(0, 55%, 76%);
-        width: 5rem;
-        height: 3.6rem;
-        font-size: 2rem;
-        margin-left: -5rem;
-        box-shadow: 0px 5px 10px -4px rgba(222,135,135,0.72);
-    }
+        .input-control-err {
+            border: 1px solid hsl(0, 100%, 50%);
+            border-right: none;
+        }
 
-    @media screen and (min-width: 720px) {
-        .form-div {
-            justify-content:center;
-        } 
-    }
+        .input-control::placeholder {
+            color: hsl(0, 40%, 76%); 
+        }
+
+        .btn-error {
+            margin-right: 10px;
+            visibility: hidden;
+        }
+
+        .button-control {
+            font-family: 'Josefin Sans', sans-serif;
+            border-radius: 30px;
+            color:hsl(0, 98%, 98%);
+            border: 1px solid rgba(206, 151, 151, 0.5);
+            margin-right: -5px;
+            width: 5rem;
+            height: 3.2rem;
+            font-size: 2rem;
+            background: linear-gradient(
+                135deg,
+                rgb(248, 191, 191) 30%,
+                rgb(240, 139, 139) 100%
+            );
+
+            box-shadow: 0px 10px 30px 0px rgba(222,135,135,0.72);
+        }
+
+        .button-control:hover {
+            transform: scale(1.03);
+            box-shadow: 0px 5px 15px 0px rgba(222,135,135,0.72);
+        }
+
+        .button-control:active {
+            transform: scale(0.99);
+        }
+
+        .mail-error {
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 800;
+            margin-top: 1rem;
+            line-height: 1.3rem;
+
+            color:rgb(255, 0, 0);
+            visibility: hidden;
+        }
+
+        .mail-error-visible {
+            visibility: visible;
+        }
+
+
+        @media screen and (min-width: 720px) {
+            .form-div {
+                /*justify-content:center;*/
+            }
+
+                .button-control {
+                    
+                }
+        }
