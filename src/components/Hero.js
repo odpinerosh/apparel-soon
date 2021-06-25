@@ -1,3 +1,4 @@
+import React from "react";
 import HeroMob from '../images/hero-mobile.jpg';
 import HeroDsk from '../images/hero-desktop.jpg';
 import './Hero.css';

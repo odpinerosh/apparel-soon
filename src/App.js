@@ -1,3 +1,4 @@
+import React from "react";
 import HeaderLogo from './components/HeaderLogo';
 import HeroMobile from './components/Hero'
 import ComingSoon from './components/ComingSoon';
